@@ -5,15 +5,18 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \" npm run watch-ts  \" \" nodemon build/index.js \" \" npm run demo  \" ",
+    "dev": "concurrently \" npm run watch-ts  \" \" nodemon build/index.js \" \" npm run demo \" \" npm run less-compile \" ",
     "watch-ts": "tsc -w",
-    "demo": "serve"
+    "demo": "serve",
+    "less-compile": "less-watch-compiler"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.11.2",
     "concurrently": "^5.0.0",
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.14.1",
     "nodemon": "^1.19.4",
     "typescript": "^3.6.4"
   }
