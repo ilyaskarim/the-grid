@@ -1,0 +1,20 @@
+{
+  "name": "the-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \" npm run watch-ts  \" \" nodemon build/index.js \" \" npm run demo  \" ",
+    "watch-ts": "tsc -w",
+    "demo": "serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.11.2",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "typescript": "^3.6.4"
+  }
+}
