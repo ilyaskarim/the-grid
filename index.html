@@ -8,6 +8,18 @@
   <link rel="stylesheet" href="build/css/index.css">
 </head>
 <body>
-  Demo
+	<div class="the-grid-container"></div>
+	<script type="text/javascript" src="build/index.js" ></script>
+	<script type="text/javascript">
+		theGrid({
+			el: ".the-grid-container",
+			columns: ["name","age"],
+			data: [
+				{name: "Ilyas ", age: 12},
+				{name: "Pervaz", age: 312},
+				{name: "Afaq ", age: 22}
+			]
+		});
+	</script>
 </body>
 </html>
